@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="assets/rootStyle/style.css">
+    <link rel="stylesheet" href="assets/signupStyling/style.css">
+</head>
+
+<body style="width: 1440px;">
+    <header>
+        <div class="navBar">
+            <div class="logo">Tasker</div>
+        </div>
+    </header>
+    <div class="entry-pic">
+        <img src="assets/images/signup.jpg" alt="using our organized calender" id="img-1">
+    </div>
+    <div class="signup-form">
+        <div class="signup-txt">
+            <h1>sign up</h1>
+        </div>
+        <form action="/data" method="post" id="form-input">
+            <div>
+                <input type="text" name="email" style="margin-bottom: 29px;" class="txt-input"
+                    placeholder="email@example.com" required>
+                <input type="password" name="password1" style="margin-bottom: 29px;" class="txt-input"
+                    placeholder="password" minlength="8" required>
+                <input type="password" name="password2" class="txt-input" placeholder="confirm password" minlength="8"
+                    required>
+            </div>
+            <input type="submit" name="submit" class="btn1" id="prim-1" value="start now">
+            <input type="button" name="login" class="btn1" id="sec-1" value="already have an account?">
+            <h2>use another way</h2>
+            <div id="another-pics">
+                <img src="assets/images/twitter-logo.jpg" alt="twitter-logo" class="pic">
+                <img src="assets/images/face-logo.png" alt="face-logo" class="pic">
+                <img src="assets/images/google2.webp" alt="google-logo" class="pic">
+            </div>
+        </form>
+    </div>
+    <script src="main-sign.js"></script>
+</body>
+
+</html>

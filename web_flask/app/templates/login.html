@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
-    <link rel="stylesheet" href="assets/rootStyle/style.css">
-    <link rel="stylesheet" href="assets/signupStyling/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/assets/rootStyle/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/assets/signupStyling/style.css')}}">
 </head>
 
 <body style="width: 1440px;">
@@ -16,13 +16,13 @@
         </div>
     </header>
     <div class="entry-pic">
-        <img src="assets/images/signup.jpg" alt="using our organized calender" id="img-1">
+        <img src="{{ url_for('static', filename='/images/signup.jpg')}}" alt="using our organized calender" id="img-1">
     </div>
     <div class="signup-form">
         <div class="signup-txt">
             <h1>login</h1>
         </div>
-        <form action="./data" method="post" id="form-input">
+        <form action="" method="post" id="form-input">
             <div>
                 <input type="text" name="email" class="txt-input" placeholder="email" required
                     style="margin-bottom: 29px;">
@@ -33,13 +33,14 @@
             <input type="button" name="signup" class="btn1" id="sec-1" value="don't have an account?">
             <h2>use another way</h2>
             <div id="another-pics">
-                <img src="assets/images/twitter-logo.jpg" alt="twitter-logo" class="pic">
-                <img src="assets/images/face-logo.png" alt="face-logo" class="pic">
-                <img src="assets/images/google2.webp" alt="google-logo" class="pic">
+                <img src="{{ url_for('static', filename='/images/twitter-logo.jpg')}}" alt="twitter-logo" class="pic">
+                <img src="{{ url_for('static', filename='/images/face-logo.png')}}" alt="face-logo" class="pic">
+                <img src="{{ url_for('static', filename='/images/google2.webp')}}" alt="google-logo" class="pic">
             </div>
         </form>
     </div>
-    <script src="main-login.js"></script>
+    <script src="{{ url_for('static', filename='/js/main-login.js')}}"></script>
+
 </body>
 
 </html>

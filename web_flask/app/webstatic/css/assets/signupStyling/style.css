@@ -16,13 +16,12 @@
 .signup-form{
     position: absolute;
     width: 522px;
-    height: 755px;
+    height: 850px;
     top: 60px;
     left: 61px;
     border-radius: 0px 0px 15px 15px;
     border: 1px solid black;
     background: var(--Concrete, #F2F2F2);
-    
 }
 
 .signup-txt{

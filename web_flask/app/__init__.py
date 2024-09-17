@@ -11,5 +11,6 @@ class Conf:
 app = Flask(__name__, static_url_path="/webstatic", static_folder=f"{basedir}/webstatic")
 app.config.from_object(Conf)
 login = LoginManager(app)
+login.login_view = 'login'
 db = SQLAlchemy(app)
 from app import routes

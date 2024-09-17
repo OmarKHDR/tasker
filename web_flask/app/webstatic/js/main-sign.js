@@ -30,7 +30,8 @@ btn.addEventListener("click", (event)=>{
         })
         .then((res)=>{
             if (res.success.status == true) {
-                window.alert(`succeed: ${res.success.reason}`)
+                window.location = "/createtasks/"
+
             }
             else {
                 window.alert(`Failed To Signup: ${res.success.reason}`)

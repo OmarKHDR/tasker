@@ -36,14 +36,14 @@ class User(UserMixin, base):
 
 class Tasks(base):
     __tablename__ = "tasks"
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(String, primary_key=True)
     name = Column(String)
     description = Column(String)
     date_added = Column(Date)
     date_finished = Column(Date)
     evaluation = Column(Integer)
     task_progress = Column(Integer)
-    task_id = Column(Integer, ForeignKey('users.id'))
+    user_id = Column(Integer, ForeignKey('users.id'))
     user = relationship('User', back_populates='tasks')
     check = relationship('Check', back_populates='task', cascade='all, delete-orphan')
 
@@ -52,7 +52,7 @@ class Tasks(base):
 
 class Check(base):
     __tablename__ = "checks"
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(String, primary_key=True)
     task_id = Column(Integer, ForeignKey('tasks.id'))
     to_check = Column(String)
     description = Column(String)

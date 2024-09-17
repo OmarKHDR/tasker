@@ -23,6 +23,8 @@
     font-weight: 400;
     width: 100px;
     vertical-align: middle;
+    cursor: pointer;
+
 }
 h1 {
     color: #000;

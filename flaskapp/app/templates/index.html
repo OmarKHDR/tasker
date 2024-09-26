@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/assets/rootStyle/style.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='css/assets/rootStyle/style_pics.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='css/assets/rootStyle/style_txt.css') }}">
+</head>
+
+<body style="width: 1440px; height: 3736px;">
+    <header>
+        <div class="navBar">
+            <div class="logo">Tasker</div>
+        </div>
+    </header>
+    <div id="pic1">
+        <img src="{{ url_for('static', filename='images/landing1.jpg') }}" alt="plan effectively" id="img1">
+    </div>
+    <div id="hero1">
+        <h1>Take charge of your day and bring your plans to life.</h1>
+    </div>
+    <div id="btns-1">
+        <div class="prim-btn" id="prim-btn1">
+            <h2>get started</h2>
+        </div>
+        <div class="sec-btn" id="sec-btn1">
+            <h2>log in</h2>
+        </div>
+    </div>
+    <div id="hero2">
+        <h1>Enjoy more free time with less stress in your day</h1>
+    </div>
+    <div id="pic2">
+        <img src="{{ url_for('static', filename='images/landing2.jpg') }}" alt="free time is important" id="img2">
+        <h2>Experience the freedom of<br /> organized living!</h2>
+    </div>
+    <div id="hero3">
+        <h1>Enjoy a competitive edge with our challenges</h1>
+    </div>
+    <div id="pic3">
+        <img src="{{ url_for('static', filename='images/landing3.jpg') }}" alt="competition is the key" id="img3">
+    </div>
+    <div id="hero4">
+        <h1>Sign up now to rise to the top!</h1>
+    </div>
+    <div id="pic4">
+        <img src="{{ url_for('static', filename='images/landing4.jpg') }}" alt="the top" id="img4">
+    </div>
+    <div id="btns-2">
+        <div class="prim-btn" id="prim-btn2">
+            <h2>get started</h2>
+        </div>
+        <div class="sec-btn" id="sec-btn2">
+            <h2>log in</h2>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

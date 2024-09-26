@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/assets/rootStyle/style.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='css/assets/rootStyle/style_pics.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='css/assets/rootStyle/style_txt.css') }}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/assets/taskerStyle/style.css')}}" />
+</head>
+
+<body style="width: 1440px;">
+    <header>
+        <div class="navBar">
+            <div class="hello-world" style="position: absolute;left: 20px;">Hello, {{current_user.name}}!</div>
+            <div class="logo">Tasker</div>
+            <div class="logout-btn" style="position: absolute;right: 30px;">logout</div>
+        </div>
+    </header>
+    <div id="center-form-pls">
+        <div class="schedule_making">
+            <div class="form_header">
+                <h1>set your schedule</h1>
+            </div>
+            <div class="form_body">
+                <h2 style="border-bottom: 1px solid black; width: fit-content;position:relative;top:30px; left: 35px;">
+                    add your tasks for this week
+                </h2>
+                <input type="text" placeholder="Task name" id="task-name">
+                <textarea name="" id="task-desc" placeholder="Task Description"></textarea>
+                <input type="button" value="add" id="add-btn">
+                <input type="button" value="save" id="save-btn" class="inactive-save">
+                <ul id="tags-list">                    
+                </ul>
+                <img src="{{url_for('static', filename='/images/arrow.png')}}" id="next-pg">
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='/js/taskchoice.js')}}"></script>
+</body>
+
+</html>

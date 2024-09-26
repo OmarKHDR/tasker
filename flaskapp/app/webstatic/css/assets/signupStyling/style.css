@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cardo&family=League+Gothic&display=swap);
+
+.entry-pic{
+    position: absolute;
+    width: 847;
+    height: 882px;
+    top: 142px;
+    right: 0px;
+}
+
+#img-1{
+    width: 847px;
+    height: 882px;
+}
+
+.signup-form{
+    position: absolute;
+    width: 522px;
+    height: 850px;
+    top: 60px;
+    left: 61px;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid black;
+    background: var(--Concrete, #F2F2F2);
+}
+
+.signup-txt{
+    position: relative;
+    width: 200px;
+    height: 68px;
+    top: 30px;
+    left: 30px;
+}
+.signup-txt h1{
+    height: 68px;
+    margin: 0px;
+}
+
+#form-input{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 440px;
+    height:auto;
+    top: 164px;
+    left: 48px; 
+}
+
+.txt-input{
+    width: 426px;
+    height: 49px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
+    opacity: 0px;
+    font-size: 24px;
+    font-family: cardo;
+    font-weight: 400;
+    
+}
+
+input.btn1{
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 300px;
+    font-family: cardo;
+    font-size: 24px;
+}
+
+input#prim-1{
+    top:40px;
+    background: var(--midnigthBlue, #0B438D);
+    color: #FFF;
+}
+input#sec-1{
+    top:80px;
+    width: 298px;
+    background: var(--Concrete, #f2f2f2);
+    color: #000;
+    font-size: 18;
+    border: 1px solid #000;
+}
+
+
+#form-input h2{
+    position: relative;
+    top: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+img.pic{
+    position: relative;
+    margin:15px;
+    width: 40px;
+    height: auto;
+    top:100px;
+}
